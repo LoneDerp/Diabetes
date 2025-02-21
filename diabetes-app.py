@@ -77,7 +77,7 @@ prediction_proba = model.predict_proba(df)
 
 st.subheader('Prediction')
 # Mapping prediction output to readable labels
-prediction_labels = {0: 'No', 1: 'Pre-diabetes', 2: 'Yes'}
+prediction_labels = {0: 'No', 1: 'Yes'}
 st.write('Diabetes Likelihood:', prediction_labels[prediction[0]])
 
 st.subheader('Prediction Probability')
